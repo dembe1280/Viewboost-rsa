@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>PD Multi-Player</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="stylesheet" href="style.css"></head><body>
+<header><div><div class="brand">PD <b>MULTI-PLAYER</b></div><div class="by">By PD | Web &amp; App Development</div></div>
+<nav><button class="on" data-tab="test">Embed Tester</button><button data-tab="gal">Gallery</button><button data-tab="promo">Promote</button></nav></header>
+<main>
+<section class="tab" id="t_test"><h2>Embed tester</h2>
+<p class="mu">Check that a YouTube video plays, can be embedded, and isn’t restricted, using the official YouTube player.</p>
+<div class="bar"><input id="turl" placeholder="Paste a YouTube link"><button class="btn" id="tgo">Test video</button></div>
+<div class="err" id="tmsg"></div>
+<div class="two"><div class="vbox" id="tbox"><div class="empty">Your test player appears here</div></div>
+<div class="card"><b>Checks</b><ul class="chk"><li id="k_id">… Video ID found</li><li id="k_api">… YouTube API loaded</li><li id="k_ready">… Player ready</li><li id="k_embed">… Embedding allowed</li></ul>
+<p class="mu">State: <b id="tstate">-</b></p><p id="tinfo" class="mu"></p></div></div>
+<div class="note">Embedded playback does not guarantee a qualifying YouTube view. Views are counted by YouTube using its own rules.</div></section>
+
+<section class="tab" id="t_gal" hidden><h2>Video gallery</h2>
+<p class="mu">Build a portfolio wall of different videos. Players load one at a time as you scroll, to keep your phone fast.</p>
+<div class="bar"><input id="gurl" placeholder="Paste a YouTube link to add"><button class="btn" id="gadd">Add video</button></div>
+<div class="err" id="gmsg"></div>
+<div class="stats"><div class="card"><span>Videos</span><b id="s_tot">0</b></div><div class="card"><span>Ready</span><b id="s_rdy">0</b></div><div class="card"><span>Playing</span><b id="s_play">0</b></div><div class="card"><span>Errors</span><b id="s_err">0</b></div><div class="card"><span>Removed</span><b id="s_rem">0</b></div></div>
+<div class="bar"><span class="mu">Count: <b id="cnt">0</b></span><label class="mu">Columns <select id="cols"><option>2</option><option>3</option><option>4</option><option>5</option></select></label><button class="btn g" id="gclr">Clear all</button></div>
+<div class="grid" id="grid"></div>
+<div class="note">Each video can be added once. This gallery is for showcasing content, not for generating views.</div></section>
+
+<section class="tab" id="t_promo" hidden><h2>Promote your video properly</h2>
+<p class="mu">The legitimate way to get more viewers is a Google Ads video campaign, which shows your video to real people.</p>
+<div class="grid3">
+<div class="card"><div class="n">1</div><b>Create a Google Ads account</b><p class="mu">Sign in at ads.google.com with your Google account.</p></div>
+<div class="card"><div class="n">2</div><b>Pick a video campaign</b><p class="mu">Choose a goal such as views or awareness and the YouTube video campaign type.</p></div>
+<div class="card"><div class="n">3</div><b>Set audience and budget</b><p class="mu">Choose locations (for example South Africa), age, interests and a daily budget you are comfortable with.</p></div>
+<div class="card"><div class="n">4</div><b>Add your video</b><p class="mu">Select your YouTube video, write a clear headline and a strong first five seconds.</p></div>
+<div class="card"><div class="n">5</div><b>Measure and improve</b><p class="mu">Watch results in Google Ads and YouTube Studio, then adjust targeting and creative.</p></div>
+<div class="card"><div class="n">!</div><b>What to avoid</b><p class="mu">Bots, view farms or players that loop a video. YouTube removes those views and can penalise the channel.</p></div></div>
+<p><a class="btn" href="https://ads.google.com" target="_blank" rel="noopener">Open Google Ads</a></p></section>
+</main><footer>PD MULTI-PLAYER · Developed by PD | Web &amp; App Development</footer>
+<script src="script.js"></script></body></html>
